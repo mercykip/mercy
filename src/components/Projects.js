@@ -10,7 +10,7 @@ toggleCategories(){
     if(this.state.activeTab===0){
          return(
             //  PHP
-             <Card shadow={5} style={{minWidth:"450", margin: 'auto'}}>
+             <Card shadow={5} style={{minWidth:"450", margin: 'auto'}} className="card">
                <CardTitle style={{color:"",height:'176px',background:'url(https://seeklogo.com/images/P/PHP-logo-0B2FDC4529-seeklogo.com.png) center / cover'}}>
             
                </CardTitle>
@@ -102,13 +102,13 @@ toggleCategories(){
     else if(this.state.activeTab===5){
         return(
             <div className="project-grid">
-              {/* MoneyWallet */}
+              {/* MoneyWallet Laravel front-end API*/}
             <Card shadow={5} style={{minWidth:"450", margin: 'auto'}}>
             <CardTitle style={{color:"#000",height:'176px',background:'url(https://www.import.io/wp-content/uploads/2017/10/React-logo.png) center / cover'}}>
          
             </CardTitle>
            
-            <CardText>MoneyWallet  React front-end(Admin-side) part of Laravel API project</CardText>
+            <CardText>MoneyWallet  React front-end(Admin-side) for Laravel API project</CardText>
             <CardActions  border  style={{color:'#fff'}}>
                 <Button href="https://github.com/mercykip/Money-Wallet-Admin-React-project" colored>GitHub</Button>
                 <Button colored>LiveDemo</Button>
@@ -118,15 +118,13 @@ toggleCategories(){
                 <IconButton name='share'></IconButton>
             </CardMenu>
           </Card>
-      {/* LOogin */}
+      {/* My portfolio */}
           <Card shadow={5} style={{minWidth:"450", margin: 'auto'}}>
             <CardTitle style={{color:"#000",height:'176px',background:'url(https://www.import.io/wp-content/uploads/2017/10/React-logo.png) center / cover'}}>
-         
             </CardTitle>
-           
-            <CardText>MoneyWallet  React front-end(Admin-side) part of Laravel API project</CardText>
+            <CardText>React Portfolio Project</CardText>
             <CardActions  border  style={{color:'#fff'}}>
-                <Button href="https://github.com/mercykip/Money-Wallet-Admin-React-project" colored>GitHub</Button>
+                <Button href="https://github.com/mercykip/React-Portfolio" colored>GitHub</Button>
                 <Button colored>LiveDemo</Button>
                 <Button colored>MoreProject</Button>
             </CardActions>
@@ -135,21 +133,7 @@ toggleCategories(){
             </CardMenu>
           </Card>
 
-          <Card shadow={5} style={{minWidth:"450", margin: 'auto'}}>
-            <CardTitle style={{color:"#000",height:'176px',background:'url(https://www.import.io/wp-content/uploads/2017/10/React-logo.png) center / cover'}}>
-         
-            </CardTitle>
-           
-            <CardText>MoneyWallet  React front-end(Admin-side) part of Laravel API project</CardText>
-            <CardActions  border  style={{color:'#fff'}}>
-                <Button href="https://github.com/mercykip/Money-Wallet-Admin-React-project" colored>GitHub</Button>
-                <Button colored>LiveDemo</Button>
-                <Button colored>MoreProject</Button>
-            </CardActions>
-            <CardMenu style={{}}>
-                <IconButton name='share'></IconButton>
-            </CardMenu>
-          </Card>
+          
             </div>
             
         );
@@ -187,7 +171,7 @@ toggleCategories(){
                       <Tab>Android</Tab>
                 </Tabs>
        
-            <Grid className="project-grid">
+            <Grid >
             <Cell col={12}>
             <div className="content">  {this.toggleCategories()}</div>
 

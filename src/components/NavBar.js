@@ -9,7 +9,7 @@ class NavBar extends Component{
 <div className="demo-big-content">
     <Layout>
         
-    <Header className="header-color" Link to={"/about"} title="MercyJemosop" scroll>
+        <Header className="header-color" title={<a href="/" style={{textDecoration:"none",color:"white"}}>MercyJemosop</a> }  scroll>
             <Navigation>
           
                 <Link to="/resume">Resume</Link>
@@ -19,15 +19,15 @@ class NavBar extends Component{
              
             </Navigation>
             </Header>
-        <Drawer title="MercyJemosop">
+            <Drawer title="MercyJemosop">
             <Navigation>
-            
-            <Link to="/resume">Springboot</Link>
-                <Link to="/about">Laravel</Link>
-                <Link to="/projects">React</Link>
-                <Link to="/contact">Angular</Link>
+                <Link to="/resume">Resume</Link>
+                <Link to="/about">About</Link>
+                <Link to="/projects">Projects</Link>
+                <Link to="/contact">Contact</Link>
             </Navigation>
         </Drawer>
+           
         <Content>
             <div className="page-content" />
              <Main/>
